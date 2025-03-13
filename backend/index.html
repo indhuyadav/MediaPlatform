@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Platform</title>
+    <script defer src="script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif ; max-width: 900px; margin: auto; padding: 0px; }
+        .news-item { border: 1px solid #ddd; padding: 10px; margin: 10px 0; }
+        button { margin-top: 5px; padding: 5px 10px; background: rgb(166, 0, 255); color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>News Articles</h1>
+    <div>
+        <input type="text" id="title" placeholder="Title"><br><br>
+        <textarea id="description" placeholder="Description"></textarea><br><br>
+        <button onclick="addNews()">Add News</button>
+    </div>
+    
+    <h2>All News</h2>
+    <div id="news-container"></div>
+</body>
+</html>
