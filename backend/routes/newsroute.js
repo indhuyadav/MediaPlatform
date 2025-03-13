@@ -2,7 +2,7 @@ const express = require("express");
 const News =require("../models/news")
 const router = express.Router();
 
-// Add News
+
 router.post("/", async (req, res) => {
   try {
     const { title, description, imageUrl } = req.body;
@@ -14,7 +14,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Get All News
 router.get("/", async (req, res) => {
   try {
     const news = await News.find().sort({ date: -1 });
@@ -24,7 +23,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// Delete News
 router.delete("/:id", async (req, res) => {
   try {
     await News.findByIdAndDelete(req.params.id);
