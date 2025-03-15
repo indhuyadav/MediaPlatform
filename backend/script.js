@@ -13,9 +13,8 @@ async function fetchNews() {
         div.innerHTML = `
             <h3>${article.title}</h3>
             <p>${article.description}</p>
-            <button onclick="deleteNews('${article._id}')">Delete</button>
-        `;
-        container.appendChild(div);
+            <button onclick="deleteNews('${article._id}')">Delete</button>`;
+            container.appendChild(div);
     });
 }
 

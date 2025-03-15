@@ -1,0 +1,122 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Container for the News App */
+  .container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #34495e;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  
+  /* Form Styling */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #6200ea;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button {
+    background: #6200ea;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #4b00b5;
+  }
+  
+  /* News Items */
+  .news-container {
+    margin-top: 20px;
+  }
+  
+  .news-item {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #6200ea;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-item h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .news-item p {
+    color: #555;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: #110f0f;
+    margin-top: 10px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #0f0e0e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
